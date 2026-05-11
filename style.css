@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100px;
+    background-color: black;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 70vh;
+    transform: translate(-50%, -50%);
+}
+
+.img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.left, .right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15vh;
+    padding: 4vh;
+}
+
+.left{
+    background-color: whitesmoke;
+}
+
+.left::selection{
+    background-color: rgba(188, 60, 49);
+    color: white;
+}
+
+.right{
+    background-color: rgba(188, 60, 49);
+    align-items: center;
+}
+
+.right::selection{
+    color: rgba(188, 60, 49);
+    background-color: white;
+}
+
+.left-nav{
+    display: flex;
+    gap: 15vh;
+    color: black;
+    justify-content: flex-start;
+}
+
+.left-nav h1{
+    cursor: pointer;
+}
+
+.left-nav input{
+    border: none;
+    outline: none;
+    width: 30%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    padding: 0 4vh; 
+}
+
+.right-nav{
+    width: 100%;
+}
+
+.right-nav ul{
+    list-style: none;
+    display: flex;
+    color: black;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: 200;
+}
+
+.right-nav ul li{
+    transition: all 0.2s ease-in;
+    border-bottom: 1px solid transparent;
+    padding: 0.5vh;
+}
+
+.right-nav ul li:hover{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.left-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30vw;
+}
+
+.left-content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;    
+}
+
+.left-content ul li{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.left-content ul li::marker{
+    color: rgba(181, 47, 38);
+}
+
+
+
+.left-content ul div{
+    width: 12vw;
+}
+
+
+.left-content ul div p{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.left-content ul div hr{
+    margin-top: 2vh;
+    border-top: grey;
+}
+
+.left-content .classification{
+    transform: rotate(-90deg);
+    font-style: italic;
+    font-size: 20px;
+    font-family:serif;
+    letter-spacing: 0.5vh;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh;
+    width: 50%;
+    color: white;
+}
+
+.onoff{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.onoff div{
+    display: flex;
+    gap: 2vh;
+    color: white;
+    font-size: 12px;
+}
+
+.toggle{
+    background-color: rgba(227, 227, 227, 0.338);
+    width: 5vh;
+    border-radius: 20px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.ball{
+    background-color: white;
+    height: 2vh;
+    width: 2vh;
+    border-radius: 50%;
+}
+
+.right-content button{
+    background-color: #d8bd92;
+    padding: 1.5vh 0vh;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 60%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.right-content button:hover{
+    color: white;
+}
+
+.right-content .price h2{
+    color: rgba(216, 189, 146);
+}
+
+.complex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+}
+
+.complex .diagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.complex .feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.complex .feature>div{
+    display: flex;
+    gap: 1vh;
+}
+
+.complex .feature>div .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.complex .feature div .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.span{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    width: 10vw;
+}
+
+.complex hr{
+    height: 15vh;
+}
+
+.right-content h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 200;
+}
