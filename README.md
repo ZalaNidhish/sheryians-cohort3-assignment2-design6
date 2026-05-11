@@ -1,6 +1,6 @@
 # Sheryians-Cohort3-Assignment2-Design6
 
-This repository contains my submission for Assignment 2 from Sheriyans Coding School
+This repository contains my submission for Assignment 2 from Sheryians Coding School
 Cohort 3.0.
 
 The assignment was to recreate 1 frontend design out of 3 provided designs using frontend technologies.
@@ -38,5 +38,5 @@ More smooth animations
 Cleaner reusable CSS structure
 🙌 Acknowledgement
 
-Thanks to Sheriyans Coding School
+Thanks to Sheryians Coding School
  and Cohort 3.0 for providing this assignment and helping me improve my frontend skills.
